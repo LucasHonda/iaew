@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">iaew</string>
+
+    <string name="login">Login</string>
+    <string name="senha">Senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="cadastro_texto">Não possui cadastro?</string>
+    <string name="esqueceu_senha">Esqueceu sua senha?</string>
+    <string name="clique_aqui">Clique aqui</string>
+</resources>

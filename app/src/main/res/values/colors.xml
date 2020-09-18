@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#574B60</color>
+    <color name="colorPrimaryDark">#3F334D</color>
+    <color name="colorAccent">#EAF0CE</color>
+    <color name="colorSecond">#C0C5C1</color>
+    <color name="gray">#7D8491</color>
+
+    <color name="chatBackGround">#695877</color>
+
+    <!-- Padroes -->
+    <color name="branco">#fff</color>
+    <color name="preto">#000</color>
+    <color name="vermelho">#FF0000</color>
+
+    <!-- Especiais -->
+    <color name="transparente">#99000000</color>
+
+    <!-- Cor padrao  -->
+    <color name="empresa">@color/colorPrimary</color>
+    <color name="cinza_campos">#EDEDED</color>
+
+</resources>

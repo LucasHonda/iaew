@@ -1,0 +1,37 @@
+ext {
+
+    //SignalR
+    signalRVersion = '1.0.0'
+
+    //butterknife
+    butterknifeVersion = '10.2.1'
+
+    //Lombok
+    lombokVersion = '1.18.12'
+
+    //Retrofit
+    retrofitVersion = '2.7.1'
+
+    // Gson
+    gsonVersion = '2.8.5'
+
+    //CircleImageView
+    circleIVVersion = '2.1.0'
+
+    //TextDrawable
+    textDrawableVersion = '1.0.1'
+
+    dependencies = [
+            microsoft : "com.microsoft.signalr:signalr:$signalRVersion",
+            butterknife : "com.jakewharton:butterknife:$butterknifeVersion",
+            butterknifeAnnotation : "com.jakewharton:butterknife-compiler:$butterknifeVersion",
+            lombok : "org.projectlombok:lombok:$lombokVersion",
+            lombokAnnotation : "org.projectlombok:lombok:$lombokVersion",
+            retrofit : "com.squareup.retrofit2:retrofit:$retrofitVersion",
+            retrofitGsonConverter : "com.squareup.retrofit2:converter-gson:$retrofitVersion",
+            circleIV : "de.hdodenhof:circleimageview:$circleIVVersion",
+            textDrawable : "com.amulyakhare:com.amulyakhare.textdrawable:$textDrawableVersion",
+            gson : "com.google.code.gson:gson:$gsonVersion"
+    ]
+
+}

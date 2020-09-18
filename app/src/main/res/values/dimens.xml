@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="login_image_altura">100dp</dimen>
+    <dimen name="login_image_largura">200dp</dimen>
+    <dimen name="login_textos">14sp</dimen>
+</resources>

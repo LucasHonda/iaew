@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:resauto="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="@dimen/login_image_largura"
+        android:layout_height="@dimen/login_image_altura"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="8dp"
+        resauto:layout_constraintEnd_toEndOf="parent"
+        resauto:layout_constraintHorizontal_bias="0.497"
+        resauto:layout_constraintStart_toStartOf="parent"
+        resauto:layout_constraintTop_toTopOf="parent"
+        resauto:srcCompat="@drawable/ic_arts" />
+
+    <EditText
+        android:id="@+id/edtLogin"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/cinza_campos"
+        android:ems="10"
+        android:hint="@string/login"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        resauto:layout_constraintEnd_toEndOf="parent"
+        resauto:layout_constraintHorizontal_bias="0.0"
+        resauto:layout_constraintStart_toStartOf="parent"
+        resauto:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        resauto:hintEnabled="false"
+        resauto:layout_constraintEnd_toEndOf="parent"
+        resauto:layout_constraintStart_toStartOf="parent"
+        resauto:layout_constraintTop_toBottomOf="@+id/edtLogin"
+        resauto:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/edtSenha"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/cinza_campos"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/entrar"
+        android:textAllCaps="false"
+        android:textColor="@color/branco"
+        android:textStyle="bold"
+        resauto:layout_constraintEnd_toEndOf="parent"
+        resauto:layout_constraintHorizontal_bias="0.0"
+        resauto:layout_constraintStart_toStartOf="parent"
+        resauto:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+    <TextView
+        android:id="@+id/lblVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/login_textos"
+        android:textStyle="bold"
+        resauto:layout_constraintBottom_toBottomOf="parent"
+        resauto:layout_constraintEnd_toEndOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:indeterminateTint="@color/branco"
+        resauto:layout_constraintBottom_toBottomOf="@+id/btnLogin"
+        resauto:layout_constraintEnd_toEndOf="parent"
+        resauto:layout_constraintHorizontal_bias="0.498"
+        resauto:layout_constraintStart_toStartOf="parent"
+        resauto:layout_constraintTop_toTopOf="@+id/btnLogin"
+        resauto:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="horizontal"
+        resauto:layout_constraintEnd_toEndOf="parent"
+        resauto:layout_constraintStart_toStartOf="parent"
+        resauto:layout_constraintTop_toBottomOf="@+id/btnLogin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/esqueceu_senha"
+                android:textAlignment="textStart"
+                android:textSize="@dimen/login_textos" />
+
+            <TextView
+                android:id="@+id/lblEsqueceuSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/clique_aqui"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/login_textos"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/preto" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cadastro_texto"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/login_textos" />
+
+            <TextView
+                android:id="@+id/lblCadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/clique_aqui"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/login_textos"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
